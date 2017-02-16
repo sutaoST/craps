@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>骰子模型</title>
+</head>
+<style>
+*{
+    margin:0;
+    padding: 0;
+}
+.box{
+    width: 1000px;
+    height:500px;
+    margin:200px auto;
+}
+   .box1{
+        width: 90px;
+        height: 90px;
+        border:3px solid #000;
+        background: #eee;
+        border-radius: 25px;
+        box-shadow: 0px 3px 14px #000;
+        float: left;
+        margin:20px;
+        padding: 10px;
+        /*/*display: flex;*/
+   } 
+   .one{
+    width:20px;
+    height: 20px;
+    background: #000;
+    border-radius: 20px;
+   }
+
+   .container1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+   .container2{
+        display: flex;
+        justify-content:space-between;
+    }
+    .one1:nth-child(2){
+        align-self:flex-end;
+    }
+
+
+    .container3{
+        display: flex;
+        justify-content:space-between;
+    }
+    .two:nth-child(2){
+        align-self:center;
+    }
+    .two:nth-child(3){
+        align-self:flex-end;
+    }
+
+
+    .container4{
+        display: flex;
+        align-content:space-between;
+        flex-wrap:wrap;
+    }
+    .column{
+        display: flex;
+        justify-content:space-between;
+        flex-basis:100%;
+    }
+
+
+    .container5{
+        display: flex;
+        flex-direction:row;
+        align-content:space-between;
+        flex-wrap:wrap;
+    }
+    .row{
+        display: flex;
+        justify-content:space-between; 
+    }
+    .five{
+        justify-content:center;
+        align-items:center;
+    }
+
+
+
+    .container6{
+        display: flex;
+        flex-direction:row;
+        align-content:space-between;
+        flex-wrap:wrap;
+        
+    }
+    .rows{
+        display: flex;
+        justify-content:space-between;
+        flex-basis:100%;
+    }
+
+</style>
+<body>
+<div class="box">
+
+    <div class="box1 container1">
+        <div class="one"></div>
+    </div>
+
+    <div class="box1 container2">
+        <div class="one one1"></div>
+        <div class="one one1"></div>
+    </div>
+
+    <div class="box1 container3">
+        <div class="one two"></div>
+        <div class="one two"></div>
+        <div class="one two"></div>
+    </div>
+
+    <div class="box1 container4">
+        <div class='column'>
+            <div class="one"></div>
+            <div class="one"></div>
+        </div>
+        <div class='column'>
+        <div class="one"></div>
+        <div class="one"></div>
+        </div>
+    </div>
+
+    <div class="box1 container5">
+        <div class='column'>
+            <div class="one"></div>
+            <div class="one"></div>
+        </div>
+        <div class='column five'>
+            <div class="one "></div>
+        </div>
+        <div class='column'>
+            <div class="one"></div>
+            <div class="one"></div>
+        </div>
+    </div>
+
+
+
+
+    <div class="box1 container6">
+        <div class='rows'>
+            <div class="one"></div>
+            <div class="one"></div>
+        </div>
+        <div class='rows'>
+            <div class="one"></div>
+            <div class="one"></div>
+        </div>
+        <div class='rows'>
+            <div class="one"></div>
+            <div class="one"></div>
+        </div>
+    </div>
+
+
+<!-- <div class="box1 container5">
+        <div class='column'>
+            <div class="one"></div>
+            <div class="one"></div>
+        </div>
+        <div class='column'>
+            <div class="one "></div>
+            <div class="one "></div>
+        </div>
+        <div class='column'>
+            <div class="one"></div>
+            <div class="one"></div>
+        </div>
+    </div>
+ -->
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
